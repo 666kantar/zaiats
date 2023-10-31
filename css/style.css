@@ -1,0 +1,316 @@
+@font-face {
+	font-family: "Albionic";
+	src: url("../Albionic.ttf");
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+    nav {
+        background-image: linear-gradient(to bottom right, rgb(102 8 6), #010801);
+        background-size: 100% 100%;
+        color: #fbfbfb;
+        padding: 20px 50px;
+
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+
+        .logos{
+            grid-area: 1/1/2/2;
+            display: flex;
+            align-items: center;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+            .logoImg{
+                cursor: pointer;
+                filter: invert(0.95);
+                width: 6rem;
+            }
+
+            .logo{
+                font-family: Albionic;
+                width: 15rem;
+                font-weight: bold;
+                font-style: Serif;
+                font-size: 250%;
+                letter-spacing: 0.3rem;
+                padding: 0 10px;
+                cursor: pointer;
+            }
+
+        .navMenu{
+            grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+            .menuItem{
+                cursor: pointer;
+                font-size: 25;
+            }
+
+            .navLimit{
+                grid-area: 1 / 4 / 2 / 4;
+                font-size: 20px;
+                cursor: pointer;
+                align-self: center;
+                text-align: center;
+                text-decoration: underline 2px solid green;
+                text-underline-offset: 8px; 
+            }
+
+    .main {
+        background: url("https://i.pinimg.com/originals/09/78/82/097882c920ef471b550733fa4df7fd11.jpg");
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+    }
+        .mainItem {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .mainImg {
+            z-index: 1;
+            max-height: 100vh;
+            transform: rotate(9deg);
+            filter: drop-shadow(21px 16px 23px black) invert(0%);
+        }
+
+
+
+        .mainBg{
+            width: 110vh;
+            height: 110%;
+            border-radius: 50%;
+            background-color: 043B3E;
+            position: absolute; 
+            z-index: 0;
+        }
+
+        .mainPrice {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-size: 60px;
+            font-weight: 300;
+            text-align: center;
+            color: white;
+            border: 1px solid gray;
+            z-index: 1;
+        }
+
+        .mainBuy{
+            top: 0%;
+            right: 6%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+
+        }
+            .mainTitle {            
+                font-size: 60px;
+                font-weight: 900;
+                text-align: center;
+                color: white;
+            }
+            .buyButton {
+                font-size: 40px;
+                font-weight: 900;
+                color: white;
+                border: 1px solid gray;
+                background-color: black;
+                cursor: pointer;
+            }
+            .buyButton:hover {
+                background-color: white;
+                color: hsl(348 80% 19% / 1);
+            }
+    
+    .bottom{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 2rem;
+    }
+        
+        .icons{
+            display: grid;
+            grid-template-columns: 80px 4fr 1fr;
+            grid-template-rows: 34px 34px;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+            .iconsico{
+                grid-area: 1 / 1 / 2 / 2;;
+                width: 4rem;
+                cursor: pointer;
+            }
+
+
+            .iconsTitle {
+                grid-area: 1 / 2 / 2 / 2;
+                cursor: pointer;
+            }
+
+            .iconsDesc{
+                grid-area: 2 / 2 / 2 / 2;
+            }
+
+/* Contact */
+
+.contactMain{
+color: #fbfbfb;;
+margin: 0;
+padding: 4rem;
+font-size: 2.5rem;
+text-align: center;
+}
+
+.flexContact {
+    max-width: 100%;
+    color: #fbfbfb;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.contactItem {
+    flex: 1;
+    text-align: center;
+    justify-items: top;
+    font-size: 1.7rem;
+    padding: 10px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 70%;
+    background-color: white; 
+}
+
+a.cont{
+    color: #2E9BE8;
+}
+
+a.cont:hover{
+    text-decoration: none;
+    color: #E8E82E;
+}
+
+
+
+/* About */
+
+#abo{
+    background: url("../img/28.png");
+    clip-path: none;
+      
+}
+
+.aimg2, .aimg3, .aimg4, #abo, #aboe{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.aimg2{
+    background-image: url('../img/3.JPG');
+    min-height: 400px;
+}
+
+
+.aimg3{
+    background-image: url('../img/50.JPG');
+    min-height: 400px;
+}
+
+
+.aimg4{
+    background-image: url('../img/88.png');
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+
+}
+
+.section-light{
+    background-color: #D47B79;
+    color: black;
+}
+
+.section-dark{
+    background-color: #2B0100;
+    color: #ddd;
+}
+.section-dark p, .section-light p{
+    margin: 0;
+    font-size: 200%;
+    padding: 4% 10% 4% 10%;
+    word-spacing: 0.6rem;
+    
+}
+
+.atext{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.atext .border{
+background-color: #3a1110;
+color: #fff;
+padding: 20px;
+
+
+}
+
+.atext .border.trans{
+    background-color: transparent;
+}
+
+@media(max-width:568px){
+    .aimg2, .aimg3, .aimg4,  #abo, #aboe{
+        background-attachment: scroll;
+    }
+}
+
+#aboe{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+       
+}
