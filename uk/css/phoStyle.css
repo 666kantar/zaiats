@@ -1,0 +1,121 @@
+@media(max-width:761px){
+    .main {clip-path: none;}
+    
+
+    nav{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoimg{
+        width: auto;
+        max-width: 20em;
+    }
+
+    .navMenu{
+        flex-wrap: nowrap;
+        flex: 100%;
+    }
+
+    .menuItem{
+        font-size: 1.2em;
+    }
+
+    .navLimit{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: start;
+        font-size: 70%;
+    }
+
+        .company{
+            align-self: center;
+        }
+
+    .main{
+        position: relative;
+    }
+
+    .mainImgBg{
+        z-index: 0;
+        position: relative;
+    }
+
+        .mainImg{
+            position: absolute;
+            left: -3em
+        }
+
+    .price{
+        z-index: 1;
+        position: absolute;
+        left: 1%;
+        align-self: self-start;
+    }
+    
+    .mainPrice{
+        font-size: 4em;
+        margin: 0.3em;
+        
+    }
+
+
+    .mainBuy{
+        margin: 0 0 4em 0;
+        position: absolute;
+        right: 1em;
+        top: 3em;
+    }
+
+    .mainTitle{
+        font-size: 40px;
+        
+    }
+
+    .buyButton{
+        font-size: 2em;
+    }
+
+    
+
+    .aimg2, .aimg3, .aimg4,  #abo, #aboe{
+        background-attachment: scroll;
+        min-height: 200px;
+    }
+    #aboe{
+        clip-path: none;
+           
+    }
+
+    .section-dark p, .section-light p{
+        font-size: 100%;
+        word-spacing: normal;
+    }
+
+    .atext .border{
+        /* background-color: black; */
+        padding: 0;
+    }
+
+    #abo .atext {
+        top: 20%;
+    }
+
+
+    .contactMain{
+        font-size: 1.3em;
+        padding: 4%;
+    }
+    
+    .vertical-line{
+        height: 80%;
+    }
+
+    .contactItem{
+        margin: 1em 0;
+        font-size: 120%;
+    }
+}
